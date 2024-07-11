@@ -1,0 +1,106 @@
+//Array
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Array Example page</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <p id="demo22"></p>
+    <script>
+        //Define an Array
+        let cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo1").innerHTML = cars;
+        //Define an Array
+        let fruits = new Array("Banana", "Orange", "Apple", "Mango");
+        document.getElementById("demo2").innerHTML = fruits;
+        //In common declared array as const
+        const cars2 = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo3").innerHTML = cars2;
+        let car = cars2[0];
+        document.getElementById("demo4").innerHTML = car;
+        //Change an element
+        cars2[0] = "Toyota";
+        document.getElementById("demo5").innerHTML = cars2;
+        //toString()
+        let text = cars2.toString();
+        document.getElementById("demo6").innerHTML = text;
+        //Acess the full array
+        document.getElementById("demo7").innerHTML = cars2;
+        //push()
+        cars2.push("Ford");
+        document.getElementById("demo8").innerHTML = cars2;
+        //Adding an element to an array by using array.length
+        cars2[cars2.length] = "Mercedes";
+        document.getElementById("demo9").innerHTML = cars2;
+        //concat()
+        let arr1 = ["a", "b", "c"];
+        let arr2 = ["d", "e", "f"];
+        let arr3 = arr1.concat(arr2);
+        document.getElementById("demo10").innerHTML = arr3;
+        //join()
+        let text2 = arr3.join();
+        document.getElementById("demo11").innerHTML = text2;
+        //reverse()
+        arr3.reverse();
+        document.getElementById("demo12").innerHTML = arr3;
+        //shift() , remove the first element and other elements index will be decrease by 1
+        arr3.shift();
+        document.getElementById("demo13").innerHTML = arr3;
+        //sort()
+        const fruit = ["Banana", "Orange", "Apple", "Mango"];
+        fruit.sort();
+        document.getElementById("demo14").innerHTML = fruit;
+        //reverse()
+        fruit.reverse();
+        document.getElementById("demo15").innerHTML = fruit;
+        //tosort() and toreverse()
+        const fruit2 = ["Banana", "Orange", "Apple", "Mango"];
+        const fruit3 = fruit2.tosort();
+        document.getElementById("demo16").innerHTML = fruit3;
+        const fruit4 = fruit2.toreverse();
+        document.getElementById("demo17").innerHTML = fruit4;
+        //length
+        const fruit5 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo18").innerHTML = fruit5.length;
+        //indexOf
+        const fruit6 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo19").innerHTML = fruit6.indexOf("Orange");
+        //lastIndexOf
+        const fruit7 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo20").innerHTML = fruit7.lastIndexOf("Orange");
+        //sort
+        const points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("demo21").innerHTML = points;
+
+        points.sort(function (a, b) { return a - b });
+        document.getElementById("demo22").innerHTML = points;
+
+        points.sort(function (a, b) { return b - a });
+        document.getElementById("demo23").innerHTML = points;
+    </script>
+</body>
+
+</html>

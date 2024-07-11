@@ -1,0 +1,27 @@
+//Function define
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Function Web page</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //Define a function
+            let x = myFunction();
+            document.getElementById("demo").innerHTML = x;
+            function myFunction() {
+                return "Hello world";
+            }
+            //JavaScript Function also define using a variable
+            let text = myFunction();
+            document.getElementById("demo").innerHTML = text;
+            // A simple function that returns the string "Hello world".
+            function myFunction() {
+                return "Hello world";
+            }
+            //The function Constructor
+            let text2 = new Function("a", "b", "return a * b");
+            document.getElementById("demo").innerHTML = text2(4, 3);
+        </script>
+    </body>

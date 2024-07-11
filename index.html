@@ -1,0 +1,27 @@
+//Java script String search
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The indexOf() Method</h2>
+
+<p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
+<p>The position of the first occurrence of "locate" is:</p>
+<p id="demo1"></p><br/>
+<p id="demo2"></p><br/>
+<p id="demo3"></p><br/>
+//indexOf();
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+document.getElementById("demo1").innerHTML = index; 
+let index2 = text.lastIndexOf("locate");
+document.getElementById("demo2").innerHTML = index2;
+let index3 = text.search("John");
+document.getElementById("demo3").innerHTML = index3;
+
+</script>
+
+</body>
+</html>
